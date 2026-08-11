@@ -394,7 +394,7 @@ with your own application icon.
 
 You should provide your own `ic_proxy` resource.
 
-The icon used inside an individual notification is separate from the proxy application's launcher icon. Your application supplies those notification icons when constructing the `Notification`.
+The icon used inside the Nowbar is just the proxy application's launcher icon. You cannot set this using any notification extras (To my best knowledge).
 
 ---
 
@@ -462,4 +462,4 @@ Everything before these broadcasts is your application's responsibility.
 
 The proxy is intentionally this small. Your application owns the notification; this project merely provides the path through which it gets posted.
 
-Huge thanks to [NowbarMeter](https://github.com/StarsShine11904/NowbarMeter) for showing that this is possible and implementation details
+Huge thanks to [NowbarMeter](https://github.com/realMoai/NowbarMeter) for showing that this is possible and implementation details
