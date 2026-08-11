@@ -1,0 +1,7 @@
+<resources>
+    <!-- Use the built-in Android framework theme, no dependencies required -->
+    <style name="Base.Theme.SamsungNowbarProxy" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+    </style>
+
+    <style name="Theme.SamsungNowbarProxy" parent="Base.Theme.SamsungNowbarProxy" />
+</resources>

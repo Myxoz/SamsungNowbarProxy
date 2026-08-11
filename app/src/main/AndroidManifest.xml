@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".ProxyApplication"
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_proxy"
+        android:supportsRtl="true">
+
+        <!-- Samsung One UI Live Notification / Now Bar support -->
+        <meta-data
+            android:name="com.samsung.android.support.ongoing_activity"
+            android:value="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".ProxyReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.kakao.taxi.action.POST" />
+                <action android:name="com.kakao.taxi.action.CANCEL" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
